@@ -1,4 +1,7 @@
 ﻿using System;
+using Builder.BuilderInheritance;
+using Builder.CodeBuilder;
+using Builder.CreationalBuilder;
 
 namespace Design_Patterns
 {
@@ -6,7 +9,17 @@ namespace Design_Patterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            Console.WriteLine(Environment.NewLine);
+            Demo demoBuilder = new Demo();
+            demoBuilder.RunDemoBuilder();
+            Console.WriteLine(Environment.NewLine);
+            // var cb = new Variable("Name", "string");
+            // Console.WriteLine(cb.ToStringIntend(0));
+            var cb = new CodeBuilderRunner();
+            cb.runner();
+
+            var bi = new BuilderInheritanceDemo();
+            
+         }
     }
 }
