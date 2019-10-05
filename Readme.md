@@ -7,3 +7,4 @@ Language: C#
 >git push -u origin master
 >git remote add origin https://github.com/LuczynskiDar/Design-Patterns
 >git push --set-upstream origin builder
+test
